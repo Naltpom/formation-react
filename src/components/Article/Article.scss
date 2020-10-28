@@ -1,0 +1,14 @@
+.Article{
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+
+    &__title{
+        font-weight: bold;
+    }
+
+    &--selected{
+        background-color: coral;
+    }
+}
