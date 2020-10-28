@@ -24,7 +24,7 @@ function CarItem(props) {
             <div>nb : {quantity}</div>
             <div><button onClick={addQt}>+</button></div>
             <div><button onClick={rmQt}>-</button></div>
-            <div total={price * quantity}>Total = {price * quantity}€</div>
+            <div total={total}>Total = {total}€</div>
         </div>
     );
 }
