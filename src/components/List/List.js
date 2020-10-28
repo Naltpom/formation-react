@@ -33,12 +33,12 @@ function List() {
             "price": 20,
         },
         {
-            "id": 1,
+            "id": 2,
             "name": "Item 2",
             "price": 10,
         },
         {
-            "id": 1,
+            "id": 3,
             "name": "Item 3",
             "price": 5,
         },
