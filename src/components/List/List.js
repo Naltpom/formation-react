@@ -1,4 +1,5 @@
 import Article from '../Article/Article'
+import CarItem from '../CarItem/CarItem'
 
 function List() {
     
@@ -25,11 +26,31 @@ function List() {
             "content": "Lorem ipsum delor sit amet.",
         },
     ];
+    const products = [
+        {
+            "id": 1,
+            "name": "Item 1",
+            "price": 20,
+        },
+        {
+            "id": 1,
+            "name": "Item 2",
+            "price": 10,
+        },
+        {
+            "id": 1,
+            "name": "Item 3",
+            "price": 5,
+        },
+    ];
 
     return (
         <div>
+            <div className="p-3">Liste des articles</div>
             <Article article={arts[0]} />
             {arts.map(art => <Article article={art} foo='bar' key={art.id} />)}
+            <div className="p-3">Liste des produits</div>
+            {products.map(product => <CarItem produit={product}  key={product.id} />)}
         </div>
     )
 }
